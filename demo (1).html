@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1">
+        <title>Greenstyle</title>
+        <link rel = "stylesheet" href = "demo.css">
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    </head>
+    <body>
+        <header class="head">
+            <nav class = main-nav>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="home.html #about">ABOUT</a></li>
+                    <li><a href="home.html #features">FEATURES</a></li>
+                    <li><a href="demo.html">DEMO</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id = "header">
+            <div class = "container">
+                <a href="home.html"><img src = "images/greenstyle logo.png" class="logo"></a>
+                <div class="header-text">
+                    <h1>Take a look <br> at our app below!</h1><br>
+                </div>
+            </div>
+        </section>
+
+<!--features-->
+        <section id = "features">
+            <div class="feature-row">
+                <div class ="feature-col">
+                  <h2>Homepage</h2>
+                  <br>
+                    <img src= "images/home.png">
+                    <br><br>
+                </div>
+                <div class ="feature-col">
+                  <h2>Tasks</h2>
+                  <br>
+                    <img src= "images/tasks.png">
+                    <br>
+                </div>
+                <div class ="feature-col">
+                  <h2>Progress Report</h2>
+                  <br>
+                    <img src= "images/phone_Progress.png">
+                    <br>
+                </div>
+                <div class ="feature-col">
+                  <h2>Weekly Challenge</h2>
+                  <br>
+                    <img src= "images/phone_Task.png">
+                    <br>
+                </div>
+            </div>
+        </section>
+
+<!--footer-->
+        <section id = "footer">
+            <div class="container footer-row">
+                <hr>
+                <div class = "footer-left-col">
+                    <div class="footer-links">
+                        <div class="link-title">
+                            <h3>Contact Us</h3>
+                            <small>Email: gs@greenstyle.com</small><br>
+                            <small>Phone: 123-456-7891</small><br>
+                            <small>Address: 1234 Old Oak Drive Oakville, ON Canada</small><br>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="footer-info">
+                        <div class="footer-logo">
+                            <img src = "images/greenstyle logo.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="copyright-text">
+            <small>&copy; 2021 Greenstyle</small>
+        </div>
+
+<!--social-->
+        <div class="social">
+            <img src= "images/facebook.png">
+            <img src= "images/instagram.png">
+            <img src= "images/twitter.png">
+            <img src= "images/linkedin.png">
+        </div>
+
+        <script>
+            // var menuBtn = document.getElementById("menuBtn");
+            // var sideNav = document.getElementById("sideNav");
+            // sideNav.style.right = "-250px";
+            // menuBtn.onclick = function(){
+            //     if(sideNav.style.right == "-250px"){
+            //         sideNav.style.right = "0";
+            //     }
+            //     else{
+            //         sideNav.style.right = "-250px";
+            //     }
+            // }
+            var scroll = new SmoothScroll('a[href*="#"]',{
+                speed: 1000,
+                speedAsDuration: true
+            });
+        </script>
+
+    </body>
+</html>
